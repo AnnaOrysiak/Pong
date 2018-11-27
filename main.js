@@ -15,7 +15,7 @@ let ballX = cw / 2 - ballSize / 2;      // od 490 do 510 px
 let ballY =  ch / 2 - ballSize / 2;     // od 240 do 260 px
 
 let ballSpeedX = 2;
-let ballSpeedY = 1;
+let ballSpeedY = 2;
 
 const paddleHeight = 100;
 const paddleWidth = 20;
