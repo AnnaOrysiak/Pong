@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,71 @@
     <title>Gra Pong JS</title>
 
     <style>
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #111;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #111;
+        }
 
-    canvas {
-        border: 2px solid darkcyan;
-    }
+        div.results {
+            width: 1000px;
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            justify-content: space-around;
+            align-items: flex-end;
+            background-color: black;
+            border: 2px solid darkcyan;
+            border-radius: 20px 20px 0 0;
+            margin-bottom: 50px;
+        }
+
+        div.results div p {
+            text-align: center;
+            color: white;
+            font-family: arial;
+            font-size: 2rem;
+            text-transform: uppercase;
+            line-height: 50px;
+        }
+
+        div.results div p span {
+            font-size: 3rem;
+            color: green;
+        }
+
+        div.results .aiResult {
+            color: darkred;
+        }
+
+        canvas {
+            border: 2px solid darkcyan;
+        }
     </style>
 
 </head>
+
 <body>
 
+    <div class="results">
+        <div>
+            <p>You: <span class="playerResult">0</span> </p>
+        </div>
+        <div>
+            <p>Computer: <span class="aiResult">0</span> </p>
+        </div>
+    </div>
+
     <canvas></canvas>
-    
+
     <script src="main.js"></script>
 
 </body>
+
 </html>
